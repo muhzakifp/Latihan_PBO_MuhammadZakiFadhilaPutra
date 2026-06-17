@@ -9,15 +9,15 @@ class Database{
 
     public function __construct()
     {
-       $this->koneksi = mysqli_connect($this->localhost,$this->username,$this->pw,$this->database);
+       $this->koneksi = mysqli_connect($this->hostname,$this->username,$this->pw,$this->database);
 
        if(!$this->koneksi){
         echo "ERROR -Koneksi terputus";
        }
-       echo "Koneksi tersambung !";
+       //echo "Koneksi tersambung !";
     }
 }
 
-$db = new Koneksi();
+$db = new Database();
 
 ?>
