@@ -1,4 +1,5 @@
 <?php
+require_once 'database.php';
 
 abstract class Tiket{
     protected $id_tiket;
